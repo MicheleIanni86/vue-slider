@@ -43,7 +43,21 @@ const app = createApp({
             } else {
                 this.immagineAttiva++;
             }
+        },
+
+        prevClick() {
+            if (this.immagineAttiva <= 0) {
+                this.immagineAttiva = this.immagineAttiva - 1;
+            } else {
+                this.immagineAttiva--;
+            }
+        },
+
+        clickImage(indiceImg) {
+            this.immagineAttiva = indiceImg;
         }
+
+
 
     },
 

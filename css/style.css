@@ -38,23 +38,14 @@
     position: relative;
 }
 
-.thumbs div:nth-child(3),
-.thumbs div:nth-child(3) img {
-    border-top-right-radius: 30px;
-}
 
-.thumbs div:nth-child(7),
-.thumbs div:nth-child(7) img {
-    border-bottom-right-radius: 30px;
-}
 
 .thumb {
     width: 200px;
     height: calc(100% / 5);
+    cursor: pointer;
 }
 
-.thumb img {
-}
 
 .allThumb {
     width: 100%;

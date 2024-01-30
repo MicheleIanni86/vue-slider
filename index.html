@@ -35,7 +35,7 @@
             <div class="thumbs">
 
                 <!-- PULSANTI NAVIGAZIONE -->
-                <div class="arrow-prev z-3">
+                <div class="arrow-prev z-3" @click="prevClick()">
                     <div class="d-flex justify-content-center align-items-center bg-white text-dark boxArrow">
                         <i class="fa-solid fa-chevron-up"></i>
                     </div>
@@ -46,14 +46,14 @@
                     </div>
                 </div>
 
-                <!-- THUMBS -->
+                <!-- THUMB -->
                 <div class="thumb">
                     <img v-for="(elemento, index) in slides" 
                     :src="elemento.image" 
                     alt="Svezia" 
                     class="allThumb"
                     :class="index == immagineAttiva ? 'attiva' : ''"
-                    
+                    @click="clickImage(index)"
                     />
                 </div>
             </div>
