@@ -27,8 +27,16 @@
         <div class="carosello d-flex">
     
             <!-- CONTAINER IMMAGINI PRINCIPALI -->
-            <div class="slide-container flex-grow-1" id="slideContainer">
-                    <img :src="slides[0].image" alt="" class="slide">      
+            <div class="slide-container flex-grow-1 position-relative" id="slideContainer">
+                <div class="position-absolute bottom-0 start-0 mb-5 px-3 b bg-secondary p-2 container-fluid" style="--bs-bg-opacity: .5;">
+
+                    <div class=" text-white fw-bold display-5 " >{{ slides[immagineAttiva].title }}
+                    </div>
+                    <div class=" text-white " >
+                        {{ slides[immagineAttiva].text }}
+                    </div>
+                </div>
+                    <img :src="slides[immagineAttiva].image" alt="" class="slide">      
             </div>
 
             <!-- THUMBNAILS -->

@@ -38,7 +38,7 @@ const app = createApp({
     },
     methods: {
         nextClick() {
-            if (this.immagineAttiva >= this.immagineAttiva.length - 1) {
+            if (this.immagineAttiva >= this.slides.length - 1) {
                 this.immagineAttiva = 0;
             } else {
                 this.immagineAttiva++;
@@ -47,7 +47,7 @@ const app = createApp({
 
         prevClick() {
             if (this.immagineAttiva <= 0) {
-                this.immagineAttiva = this.immagineAttiva - 1;
+                this.immagineAttiva = this.slides.length - 1;
             } else {
                 this.immagineAttiva--;
             }
