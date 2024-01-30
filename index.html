@@ -26,14 +26,9 @@
 
         <div class="carosello d-flex">
     
+            <!-- CONTAINER IMMAGINI PRINCIPALI -->
             <div class="slide-container flex-grow-1" id="slideContainer">
-    
-                <img src="./img/01.webp" alt="" class="slide attiva">
-                <img src="./img/02.webp" alt="" class="slide">
-                <img src="./img/03.webp" alt="" class="slide">
-                <img src="./img/04.webp" alt="" class="slide">
-                <img src="./img/05.webp" alt="" class="slide">
-            
+                    <img :src="slides[0].image" alt="" class="slide">      
             </div>
 
             <div class="thumbs">
