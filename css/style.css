@@ -49,17 +49,22 @@
 }
 
 .thumb {
+    width: 200px;
     height: calc(100% / 5);
-    opacity: 0.5;
 }
 
 .thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
-.thumb.active {
+.allThumb {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+
+}
+
+.attiva {
     border: 2px solid red;
     opacity: 1;
 }

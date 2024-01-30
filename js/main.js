@@ -4,6 +4,7 @@ const { createApp } = Vue;
 const app = createApp({
     data() {
         return {
+            immagineAttiva: 0,
             slides: [
                 {
                     image: './img/01.webp',
@@ -32,6 +33,18 @@ const app = createApp({
                 }
             ],
         };
+
+
+    },
+    methods: {
+        nextClick() {
+            if (this.immagineAttiva >= this.immagineAttiva.length - 1) {
+                this.immagineAttiva = 0;
+            } else {
+                this.immagineAttiva++;
+            }
+        }
+
     },
 
 
